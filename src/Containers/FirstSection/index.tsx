@@ -10,6 +10,7 @@ export const FirstSection = () => {
         <Title fontSize={"6rem"} color={"#8C8C8C"}>
           Discover our <span style={{ color: "#ffffff" }}>universe</span>
         </Title>
+
         <Description fontSize={"2rem"} color="#8C8C8C">
           User Interface
         </Description>
@@ -19,6 +20,7 @@ export const FirstSection = () => {
         <Image
           width={1000}
           height={800}
+          quality={100}
           objectFit="cover"
           src="/planet.jpg"
           alt="logo"

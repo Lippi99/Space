@@ -1,7 +1,8 @@
 import type { NextPage } from "next";
+import { FirstSection } from "../Containers/FirstSection";
 
 const Home: NextPage = () => {
-  return <div>THIS IS GOING TO BE FUN AS HELL</div>;
+  return <FirstSection />;
 };
 
 export default Home;

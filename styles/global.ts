@@ -16,4 +16,8 @@ export const GlobalStyle = createGlobalStyle`
     font-size: 62.5%;
   }
 
+  body {
+    background: var(--darker);
+  }
+
 `;

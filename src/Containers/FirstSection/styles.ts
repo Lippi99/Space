@@ -23,17 +23,49 @@ export const Container = styled.section`
     overflow: hidden;
     z-index: -999;
 
+    @media screen and (max-width: 1157px) {
+      left: 50%;
+      top: 40%;
+      height: 100%;
+      transform: translate(-50%, -50%);
+    }
   }
-
-`
+`;
 
 export const TitleContainer = styled.div`
   width: 50%;
-
   h1 {
     margin-bottom: 1rem;
     + h1 {
       margin-left: 1.3rem;
     }
+  }
+
+  @media screen and (max-width: 1157px) {
+    width: 100%;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 5rem;
+
+    > h1 {
+      font-size: 4rem;
+    }
+  };
+
+  @media screen and (max-width: 800px) {
+    bottom: 5%;
+  }
+  @media screen and (max-width: 540px) {
+    bottom: 15%;
+     > h1 {
+       font-size: 2.5rem;
+     }
+     > p {
+       font-size: 1.7rem;
+     }
   }
 `;

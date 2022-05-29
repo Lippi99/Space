@@ -9,9 +9,16 @@ interface PlanetProps {
   alt: string;
   name: string;
   description: string;
+  linkRef: string;
 }
 
-export const Planet = ({ name, description, src, alt }: PlanetProps) => {
+export const Planet = ({
+  name,
+  description,
+  src,
+  alt,
+  linkRef,
+}: PlanetProps) => {
   return (
     <Container>
       <TitleContainer>
@@ -22,7 +29,14 @@ export const Planet = ({ name, description, src, alt }: PlanetProps) => {
           {description}
         </Paragraph>
 
-        <ButtonCheck>Additional informations</ButtonCheck>
+        <a
+          style={{ marginTop: "2rem" }}
+          target="_blank"
+          href={linkRef}
+          rel="noreferrer"
+        >
+          <ButtonCheck>Additional informations</ButtonCheck>
+        </a>
       </TitleContainer>
       <div style={{ width: "50%" }}>
         <Image

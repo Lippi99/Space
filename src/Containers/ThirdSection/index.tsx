@@ -5,10 +5,11 @@ import { Title } from "../../components/Text/Title";
 import { Container } from "./styles";
 
 export const ThirdSection = ({ planets }: any) => {
+  console.log(planets);
   return (
     <Container>
       <Title fontWeight={1000} fontSize="4rem" color="#ffffff">
-        Existem {planets?._count} planetas em nosso sistema solar
+        There are {planets?._count} planets in our solar system
       </Title>
       {planets._items?.map((planet: any) => {
         return (
@@ -19,6 +20,7 @@ export const ThirdSection = ({ planets }: any) => {
               description={planet.description}
               key={planet.id}
               name={planet.name}
+              linkRef={planet.wikiLink}
             />
           </React.Fragment>
         );

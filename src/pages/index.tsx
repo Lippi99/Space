@@ -9,6 +9,11 @@ const Home: NextPage = ({ planets }: any) => {
     <>
       <Head>
         <title>Planets</title>
+        <meta
+          name="description"
+          content="Shows all planets in our Solar System"
+        />
+        <link rel="icon" href="/favicon.ico" />
       </Head>
       <FirstSection />
       <SecondSection />

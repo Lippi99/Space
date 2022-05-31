@@ -12,17 +12,17 @@ export const FirstSection = () => {
         </Title>
 
         <Description fontSize={"2rem"} color="#8C8C8C">
-          User Interface
+          Built with Next.js
         </Description>
       </TitleContainer>
 
       <div className="planet">
         <Image
-          width={1000}
+          width={800}
           height={800}
           quality={100}
-          objectFit="cover"
-          src="/planet.jpg"
+          objectFit="contain"
+          src="/planet.svg"
           alt="logo"
         />
       </div>

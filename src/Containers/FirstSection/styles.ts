@@ -22,7 +22,7 @@ export const Container = styled.section`
     transform: rotate(-180deg);
     overflow: hidden;
     z-index: -999;
-
+    
     @media screen and (max-width: 1157px) {
       left: 50%;
       top: 40%;

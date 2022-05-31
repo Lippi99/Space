@@ -4,7 +4,6 @@ import { Title } from "../../components/Text/Title";
 import { Container } from "./styles";
 
 export const ThirdSection = ({ planets }: any) => {
-  console.log(planets);
   return (
     <Container>
       <Title fontWeight={1000} fontSize="4rem" color="#ffffff">

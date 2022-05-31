@@ -1,5 +1,4 @@
 import React from "react";
-import { ButtonCheck } from "../../components/Button";
 import { Planet } from "../../components/Planet";
 import { Title } from "../../components/Text/Title";
 import { Container } from "./styles";
@@ -9,14 +8,15 @@ export const ThirdSection = ({ planets }: any) => {
   return (
     <Container>
       <Title fontWeight={1000} fontSize="4rem" color="#ffffff">
-        There are {planets?._count} planets in our solar system
+        There are {planets?._count} planets in our Solar System
       </Title>
       {planets._items?.map((planet: any) => {
+        console.log();
         return (
           <React.Fragment key={planet.id}>
             <Planet
               src={planet.imgSrc[0]?.img}
-              alt={planet.imgSrc[1]?.imgDescription}
+              alt={planet.imgSrc[0]?.imgDescription}
               description={planet.description}
               key={planet.id}
               name={planet.name}

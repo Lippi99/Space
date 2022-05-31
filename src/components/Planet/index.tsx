@@ -21,6 +21,16 @@ export const Planet = ({
 }: PlanetProps) => {
   return (
     <Container>
+      <div style={{ width: "50%" }}>
+        <Image
+          width={600}
+          height={620}
+          alt={alt}
+          src={src}
+          objectFit="contain"
+          quality={100}
+        />
+      </div>
       <TitleContainer>
         <Title fontWeight={1000} fontSize="4rem" color="#ffffff">
           {name}
@@ -38,16 +48,6 @@ export const Planet = ({
           <ButtonCheck>Additional informations</ButtonCheck>
         </a>
       </TitleContainer>
-      <div style={{ width: "50%" }}>
-        <Image
-          width={600}
-          height={620}
-          alt={alt}
-          src={src}
-          objectFit="contain"
-          quality={100}
-        />
-      </div>
     </Container>
   );
 };

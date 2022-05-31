@@ -41,4 +41,8 @@ export const TitleContainer = styled.div`
       margin-top: 1rem;
     }
   }
+
+  @media screen and (max-width: 520px ) {
+    width: 100%;
+  }
 `;

@@ -10,4 +10,8 @@ export const Container = styled.section`
   justify-content: center;
   padding-left: 4rem;
   position: relative;
+
+  @media screen and (max-width: 520px ) {
+    padding-right: 4rem;
+  }
 `;

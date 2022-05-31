@@ -28,7 +28,7 @@ export const Planet = ({
           alt={alt}
           src={src}
           objectFit="contain"
-          quality={100}
+          quality={30}
         />
       </div>
       <TitleContainer>

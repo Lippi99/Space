@@ -32,4 +32,16 @@ export const TitleContainer = styled.div`
       margin-left: 1.3rem;
     }
   }
+
+  @media screen and (max-width: 520px) {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    h1 {
+      width: 100%;
+      text-align: center;
+      font-size: 4rem;
+    }
+  }
 `;

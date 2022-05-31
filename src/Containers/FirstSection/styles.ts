@@ -59,7 +59,7 @@ export const TitleContainer = styled.div`
   @media screen and (max-width: 800px) {
     bottom: 5%;
   }
-  @media screen and (max-width: 540px) {
+  @media screen and (max-width: 520px) {
     bottom: 15%;
      > h1 {
        font-size: 2.5rem;

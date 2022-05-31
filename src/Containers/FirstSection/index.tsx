@@ -20,9 +20,9 @@ export const FirstSection = () => {
         <Image
           width={800}
           height={800}
-          quality={100}
+          quality={25}
           objectFit="contain"
-          src="/planet.svg"
+          src="/planet.jpg"
           alt="logo"
         />
       </div>

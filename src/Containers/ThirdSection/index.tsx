@@ -11,7 +11,6 @@ export const ThirdSection = ({ planets }: any) => {
         There are {planets?._count} planets in our Solar System
       </Title>
       {planets._items?.map((planet: any) => {
-        console.log();
         return (
           <React.Fragment key={planet.id}>
             <Planet

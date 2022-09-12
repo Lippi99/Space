@@ -4,7 +4,24 @@ import { FirstSection } from "../Containers/FirstSection";
 import { SecondSection } from "../Containers/SecondSection";
 import { ThirdSection } from "../Containers/ThirdSection";
 
-const Home: NextPage = ({ planets }: any) => {
+interface PlanetData {
+  name: string;
+  description: string;
+  wikiLink: string;
+  id: number;
+  imgSrc: [
+    {
+      img: string;
+      imgDescription: string;
+    }
+  ];
+}
+
+interface Planet {
+  planets: PlanetData[];
+}
+
+const Home = ({ planets }: Planet) => {
   return (
     <>
       <Head>
